@@ -18,8 +18,20 @@ h3{
   font-size: 1.8rem;
 }
 
+h4{
+  font-size: 1rem;
+}
+
 p{
   font-size: 1rem;
+}
+
+ul{
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .margin-top_1{
@@ -28,6 +40,11 @@ p{
 
 .main-primary-color {
   color:  #ff5e6c;
+}
+
+.shadow-sm{
+  -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1);
+    box-shadow: 0 2px 3px rgba(10,10,10,.1);
 }
 
 #home{
@@ -148,3 +165,18 @@ p{
     transform: translateY(-15px);
   }
 }
+
+.navigation-container{
+  display: flex;
+  justify-content: space-between;
+  min-height: 3.2rem;
+  width: 100%;
+}
+
+.navigation-name{
+  font-family: Pacifico, cursive;
+  font-size: 25px;
+  color: #2b3d4f;
+  padding-left: 2rem;
+}
+
