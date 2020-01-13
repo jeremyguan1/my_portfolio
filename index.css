@@ -148,3 +148,22 @@ p{
     transform: translateY(-15px);
   }
 }
+
+.navigation-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navigation-name{
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+}
+
+.navigation-items li{
+  display: inline-block;
+  min-width: 6rem;
+}
