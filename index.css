@@ -169,14 +169,18 @@ ul{
 .navigation-container{
   display: flex;
   justify-content: space-between;
-  min-height: 3.2rem;
-  width: 100%;
+  align-items: center;
+  min-height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .navigation-name{
-  font-family: Pacifico, cursive;
-  font-size: 25px;
-  color: #2b3d4f;
-  padding-left: 2rem;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
 }
 
+.navigation-items li{
+  display: inline-block;
+  min-width: 6rem;
+}
