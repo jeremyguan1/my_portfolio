@@ -171,8 +171,8 @@ ul{
   justify-content: space-between;
   align-items: center;
   min-height: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .navigation-name{
@@ -180,7 +180,30 @@ ul{
   font-size: 1.5rem;
 }
 
-.navigation-items li{
-  display: inline-block;
-  min-width: 6rem;
+.navigation-items{
+  display: flex;
+}
+
+.navigation-items-wrapper{
+  width: 5rem;
+  font-size: 1rem;
+  height: 3rem;
+}
+
+.navigation-items-wrapper:hover{
+ background-color: #ff5e6c;
+ color: white;
+}
+
+.navigation-items-wrapper a{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-items-wrapper a:hover{
+  color: white;
 }
