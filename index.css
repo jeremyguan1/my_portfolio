@@ -8,6 +8,11 @@ h1,h2,h3,h4,p{
   padding: 0;
   margin: 0;
   letter-spacing: 3px;
+  font-weight: 400;
+}
+
+h1{
+  font-size: 3.5rem;
 }
 
 h2{
@@ -171,8 +176,8 @@ ul{
   justify-content: space-between;
   align-items: center;
   min-height: 3rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .navigation-name{
@@ -206,4 +211,17 @@ ul{
 
 .navigation-items-wrapper a:hover{
   color: white;
+}
+
+
+.main__container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.main__home-header{
+
 }
