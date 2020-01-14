@@ -217,11 +217,12 @@ ul{
 .main__container{
   display: flex;
   flex-direction: column;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
   text-align: center;
+  margin: 6rem 6rem 6rem 6rem;
 }
 
-.main__home-header{
-
+.main__container-object{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  text-align: left;
 }
