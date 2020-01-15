@@ -1,14 +1,15 @@
 body{
   font-size: 62.5%;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
 }
 
 h1,h2,h3,h4,p{
   padding: 0;
   margin: 0;
   letter-spacing: 3px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h1{
@@ -20,27 +21,23 @@ h2{
 }
 
 h3{
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 h4{
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 p{
-  font-size: 1rem;
-}
-
-ul{
-  padding: 0;
-  list-style-type: none;
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  font-size: 0.95rem;
 }
 
 .margin-top_1{
   margin-top: 1rem;
+}
+
+.margin-top_2{
+  margin-top: 2rem;
 }
 
 .main-primary-color {
@@ -223,6 +220,48 @@ ul{
 
 .main__container-object{
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 1rem;
   text-align: left;
+}
+
+.main-text{
+  font-weight: bold;
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 2em;
+  opacity: .5;
+}
+.hr-text:before {
+  content: '';
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 .5em;
+  line-height: 1.5em;
+  font-size: 1rem;
+  color: #818078;
+  background-color: #fcfcfa;
+}
+
+.bg-yellow{
+  background-color: yellow;
+  font-size: 3rem;
+  text-align: center;
 }
