@@ -42,7 +42,8 @@ h2{
 }
 
 h4{
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  
 }
 
 p{
@@ -541,9 +542,28 @@ body{
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
   border: 1px solid #888;
   width: 80%;
+}
+
+.modal-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-title-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 2rem;
+  padding: 1rem;
+  background-color: rgb(229,229,229);
+}
+
+.modal-title{
+  font-weight: 400;
 }
 
 .close {
@@ -551,6 +571,7 @@ body{
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-right: 1rem;
 }
 
 .close:hover,
