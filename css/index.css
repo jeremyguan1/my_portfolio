@@ -517,3 +517,8 @@ body{
 .fadeIn-top{
   top: 20%;
 }
+
+.work-image-details p{
+  background-color: black;
+  color: white;
+}
