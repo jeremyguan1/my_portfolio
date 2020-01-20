@@ -9,6 +9,8 @@ function checkData(title) {
       return getData("Lord");
     case "Haimens-Customer":
       return getData("Customer");
+    case "OD-One-Punch":
+      return getData("One-Punch");
     case "Mengzmom-gluttony":
       return getData("Gluttony");
     case "Mengzmom-athena":
@@ -49,6 +51,13 @@ function getData(title) {
         image: "../images/haimen/customer/main.png",
         paragraph: `A customer site that helps customer to book trip online. It provides real time chat with administrators. It get real time estimate price between locations.
         It provides service for customer to purchase online, using coupon, and see booking history. It provide multi languages. It has login and register systems. It has sold 5 copies in a month.`
+      });
+    case "One-Punch":
+      return markup({
+        title: title,
+        imgUrl: "https://www.one-punch.us/",
+        image: "../images/od/onePunch/main.png",
+        paragraph: `A static site for a third party payment we invented with AliPay and WeChat pay. And it also provide a login system and download our document.`
       });
     case "Gluttony":
       return markup({
