@@ -9,6 +9,12 @@ function checkData(title) {
       return getData("Lord");
     case "Haimens-Customer":
       return getData("Customer");
+    case "Mengzmom-gluttony":
+      return getData("Gluttony");
+    case "Mengzmom-athena":
+      return getData("Athena");
+    case "aofaedu":
+      return getData("Aofaedu");
     default:
       return null;
   }
@@ -23,7 +29,7 @@ function getData(title) {
         image: "../images/haimen/king/main.png",
         paragraph: `A main CMS platform that is helping to create dynamic administrators site. It includes
       online payment with many options, source control, and data analysis. It is helping owner to build more administrators sites and able to sell those administrator
-       sites to company that offering services that include peer-to-peer ridesharing and ride service hailing.`
+       sites to company that offering services that include peer-to-peer ridesharing and ride service hailing. It has sold 5 copies in a month.`
       });
     case "Lord":
       return markup({
@@ -34,7 +40,7 @@ function getData(title) {
         It book a trip and estimate price with real time by using Google Map API. It allow administrators to chat with customer in real time. It send push
         notification to user with OneSignal API. It send emails to customer and drivers by using SendGrid. It send SMS message to user by using Twilio APi. It
        allow customer to pay with credit card with Square API. It track driver's real time location and provides coupon and add-on service on the system. It
-        Also to analysis to help administrators on their finance. `
+        Also to analysis to help administrators on their finance. It has sold 5 copies in a month.`
       });
     case "Customer":
       return markup({
@@ -42,7 +48,30 @@ function getData(title) {
         imgUrl: "https://yougolax.com/",
         image: "../images/haimen/customer/main.png",
         paragraph: `A customer site that helps customer to book trip online. It provides real time chat with administrators. It get real time estimate price between locations.
-        It provides service for customer to purchase online, using coupon, and see booking history. It provide multi languages. It has login and register systems.`
+        It provides service for customer to purchase online, using coupon, and see booking history. It provide multi languages. It has login and register systems. It has sold 5 copies in a month.`
+      });
+    case "Gluttony":
+      return markup({
+        title: title,
+        imgUrl: "https://gluttony.mengzmom.net/",
+        image: "../images/mengzmom/gluttony/main.png",
+        paragraph: `An main platform where is create dynamical new after school platform. It control all main API keys and school main information.`
+      });
+    case "Athena":
+      return markup({
+        title: title,
+        imgUrl: "https://athena.mengzmom.net/",
+        image: "../images/mengzmom/athena/main.png",
+        paragraph: `An after school platform where user is able to do actions with many after school programs. It creates classes and schedule for teachers and parents. It send
+        payments to parent with various time options. It also has notification services. It has been sold to many after school programs.`
+      });
+    case "Aofaedu":
+      return markup({
+        title: title,
+        imgUrl: "https://aofaedu.com/",
+        image: "../images/aofaedu/main.png",
+        paragraph: `A Static web page for school advising company. It is design to give information to international students on their road to reach their dream college.
+        It is single application and mobile friendly.`
       });
     default:
       return null;
