@@ -34,7 +34,8 @@ h1, h2, h3, h4, ul, li {
 }
 
 h1{
-  font-size: 6rem;
+  font-size: 4rem;
+  letter-spacing: 1.5rem;
 }
 
 h2{
@@ -180,8 +181,6 @@ a, a:hover, a:active {
 }
 
 .header-headline-main{
-  font-size: 4rem;
-  letter-spacing: 1.5rem;
   margin-bottom: 2rem;
   font-weight: 300;
 }
@@ -414,7 +413,7 @@ a, a:hover, a:active {
   width: 100%;
   display: grid;
   margin-top: 1.5rem;
-  grid-template-columns: repeat(3, 3fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
 }
 
@@ -431,21 +430,7 @@ a, a:hover, a:active {
   cursor: pointer;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
 
-*, *:before, *:after{
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:border-box;
-  box-sizing: border-box;
-}
-
-body{
-  background: #f9f9f9;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
-}
 
 .main-title{
   color: #2d2d2d;
@@ -458,7 +443,7 @@ body{
   height: 100%;
   width: 100%;
   cursor: pointer;
-
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 }
 
 .work-image-wrapper {
@@ -546,7 +531,7 @@ body{
   background-color: #fefefe;
   margin: auto;
   border: 1px solid #888;
-  width: 65%;
+  max-width: 50rem;
 }
 
 .modal-container{
@@ -643,4 +628,53 @@ body{
 
 .modal-close:hover{
   background-color: lightgrey;
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+  .work-container-layout{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .work-container-layout{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .work-container-layout{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .work-container-layout{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-wrapper{
+    margin: 4rem 2rem;
+    bottom: 2rem;
+  }
+  .about-container{
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-container{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  h1{
+    font-size: 2rem;
+    letter-spacing: 0px;;
+  }
+  h2{
+    font-size: 1rem;
+  }
 }
