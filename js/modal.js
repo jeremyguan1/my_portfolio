@@ -19,10 +19,30 @@ function getData(title) {
     case "King":
       return markup({
         title: title,
+        imgUrl: "https://king.yougolax.com/",
         image: "../images/haimen/king/main.png",
         paragraph: `A main CMS platform that is helping to create dynamic administrators site. It includes
       online payment with many options, source control, and data analysis. It is helping owner to build more administrators sites and able to sell those administrator
-       sites to company that offering services that include peer-to-peer ridesharing and ride service hailing, .`
+       sites to company that offering services that include peer-to-peer ridesharing and ride service hailing.`
+      });
+    case "Lord":
+      return markup({
+        title: title,
+        imgUrl: "https://lord.yougolax.com/",
+        image: "../images/haimen/lord/main.png",
+        paragraph: `An administrators platform where user is able to do actions with customers. It help administrators to control their drivers, vehicles, and customers.
+        It book a trip and estimate price with real time by using Google Map API. It allow administrators to chat with customer in real time. It send push
+        notification to user with OneSignal API. It send emails to customer and drivers by using SendGrid. It send SMS message to user by using Twilio APi. It
+       allow customer to pay with credit card with Square API. It track driver's real time location and provides coupon and add-on service on the system. It
+        Also to analysis to help administrators on their finance. `
+      });
+    case "Customer":
+      return markup({
+        title: title,
+        imgUrl: "https://yougolax.com/",
+        image: "../images/haimen/customer/main.png",
+        paragraph: `A customer site that helps customer to book trip online. It provides real time chat with administrators. It get real time estimate price between locations.
+        It provides service for customer to purchase online, using coupon, and see booking history. It provide multi languages. It has login and register systems.`
       });
     default:
       return null;
@@ -45,7 +65,7 @@ function markup(platform) {
         ${platform.paragraph}
       </p>
     </div>
-      <a href="https://king.yougolax.com/" target="_blank" class="modal-visit-button">VISIT SITE</a>
+      <a href="${platform.imgUrl}" target="_blank" class="modal-visit-button">VISIT SITE</a>
     <div class='modal-close-wrapper'>
       <button class="modal-close">Close</button>
     </div>
