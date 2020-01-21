@@ -695,6 +695,72 @@ a, a:hover, a:active {
   display: none;
 }
 
+.contact-wrapper{
+  padding: 8rem 8rem;
+  background-color: #F0F0F0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image{
+  width: 4rem;
+}
+
+.footer-wrapper{
+  background-color: #222;
+}
+
+.footer-container{
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.social-items{
+  display: flex;
+}
+
+.social-box{
+  width: 50px;
+  height: 50px;
+  display: block;
+  font-size: 24px;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #333;
+  text-align: center;
+  margin-right: 10px;
+  transition: 0.2s ease-in;
+  color: white;
+}
+
+.social-box:hover{
+  transform: scale(1.1);
+}
+
+.facebook:hover{
+  background-color: #3B5998;
+  color: white;
+}
+
+.linkedin:hover{
+  background-color: #0077B5;
+  color: white;
+}
+
+.github:hover{
+  background-color: #4183C4;
+  color: white;
+}
+
+.footer-ending{
+  color: white;
+}
+
 @media only screen and (min-width: 1400px) {
   .work-container-layout{
     grid-template-columns: repeat(3, 1fr);
@@ -731,6 +797,10 @@ a, a:hover, a:active {
   }
   .about-wrapper{
     padding: 4rem 2rem;
+  }
+  .contact-wrapper{
+    padding: 4rem 2rem;
+
   }
   .about-container{
     width: 80%;
