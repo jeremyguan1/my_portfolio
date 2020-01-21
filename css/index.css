@@ -690,6 +690,10 @@ a, a:hover, a:active {
   margin-top: 1rem;
 }
 
+.mobile-nav-wrapper{
+  display: none;
+}
+
 @media only screen and (min-width: 1400px) {
   .work-container-layout{
     grid-template-columns: repeat(3, 1fr);
@@ -747,6 +751,41 @@ a, a:hover, a:active {
 @media only screen and (max-width: 600px) {
   .about-container{
     width: 100%;
+  }
+  .navigation{
+    display: none;
+  }
+  .mobile-nav-wrapper{
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+  }
+  .mobile-nav{
+    height: 3rem;
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid black;
+  }
+  .mobile-nav-icon{
+    width: 50px;
+    cursor: pointer;
+  }
+  .mobile-nav-items{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    display: none;
+  }
+  .mobile-nav-items ul li {
+    padding: 10px;
+    font-weight: 400;
+    cursor: pointer;
   }
 }
 

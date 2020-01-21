@@ -11,3 +11,13 @@ window.onscroll = function() {
     element2.style.height = "4rem";
   }
 };
+
+const mobileNav = document.querySelector(".mobile-nav-icon");
+mobileNav.onclick = function() {
+  let navItems = document.querySelector(".mobile-nav-items");
+  if (navItems.style.display === "inline-block") {
+    navItems.style.display = "none";
+  } else {
+    navItems.style.display = "inline-block";
+  }
+};
